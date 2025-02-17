@@ -1,0 +1,30 @@
+Nama  : Cecillia Yowien Arthamevia
+NIM   : 224308031
+Kelas : TKA-6B
+
+ANALISIS
+1. Apa yang terjadi saat objek berwarna merah muncul di kamera?
+Ketika terdapat objek bewarna merah muncul di kamera dan terdeteksi oleh sistem maka pada tampilan result maka akan muncul warna merah yang dapat dideteksi oleh sistem dan pada tampilan mask maka akan muncul warna putih sesuai dengan tampilan result yang dapat dideteksi oleh sistem.
+
+2. Bagaimana sistem mendeteksi dan memfilter warna merah?
+Dimana dalam sistem ini dapat mendeteksi warna merah yaitu dengan menggunakan Teknik pemrosesan citra dengan metode OpenCV. Proses tersebut dimulai dari gambar yang ditangkap pleh kamera akan dikonversi dari ruang warna BGR (Blue, Green, Red) ke ruang warna HSV (Hue, Saturation, Value). Selanjutnya definisi rentang warna yang mencangkup nilai-nilai Hue, Saturation, dan Value yang sesuai dengan warna merah, yaitu lower_red = np.array([0, 120, 70]) dan upper_red = np.array([10, 255, 255]).
+
+3. Bagaimana metode ini dapat diterapkan dalam intelligent control systems?
+OpenCV (Open Source Computer Vision Library) dapat diterapkan dalam intelligent control systems melalui berbagai cara:
+a) Pengolahan Citra dan Visi Komputer: OpenCV dirancang khusus untuk pengolahan citra dan visi komputer, menyediakan berbagai alat dan fungsi yang memudahkan pengembangan aplikasi berbasis pengolahan citra.
+b) Deteksi Objek: OpenCV dapat digunakan untuk mendeteksi objek kendaraan bermotor dengan metode HOG-SVM untuk analisis lalu lintas cerdas. Deteksi objek merupakan komponen penting dalam sistem manajemen lalu lintas modern yang memungkinkan pemantauan dan analisis real-time dari arus lalu lintas.
+c) Pengenalan Wajah: Fitur-fitur dalam OpenCV dapat digunakan untuk pengenalan wajah, pelacakan wajah, dan deteksi wajah.
+d) Robotika: OpenCV dapat diterapkan dalam dunia robotika. Library OpenCV memiliki lebih dari 2500 algoritma yang telah dioptimalkan, yang meliputi himpunan algoritma computer vision dan machine learning.
+
+DISKUSI
+1. Bagaimana AI dapat meningkatkan sistem kontrol berbasis Computer Vision?
+AI dapat meningkatkan sistem kontrol berbasis Computer Vision dengan meningkatkan kemampuan pengawasan visual, deteksi objek, pengenalan wajah, dan analisis perilaku. Teknologi AI memungkinkan perangkat komputer untuk menangkap, melihat, dan memahami dunia melalui pengelolaan citra atau video, yang memungkinkan mesin untuk mendeteksi, menginterpretasi, dan merespons informasi visual serupa dengan cara manusia. Dengan memanfaatkan teknik AI seperti machine learning dan pengenalan pola, Computer Vision dapat memproses dan menganalisis data visual, memungkinkan komputer untuk "mengerti" atau mengambil informasi dari data tersebut. Integrasi AI dalam Computer Vision memungkinkan sistem untuk melampaui kemampuan penglihatan manusia dengan kecepatan dan ketepatannya, mendeteksi bahkan cacat terkecil dalam barang yang diproduksi secara real-time. 
+
+2. Apa kelebihan dan kekurangan metode deteksi objek berbasis warna?
+Metode deteksi objek berbasis warna memiliki beberapa kelebihan diantaranya yaitu ketika sistem deteksi warna menggunakan OpenCV dan ruang warna HSV adalah pendekatan yang sangat cocok dan efisien untuk berbagai aplikasi dalam analisis citra dan pengenalan objek berbasis warna. Sistem ini mampu mengolah setiap frame secara real-time dari feed kamera, yang memungkinkan sistem untuk memberikan respon cepat terhadap perubahan dalam lingkungan sekitar. Selain itu, sistem dapat mengenali berbagai warna seperti merah, hijau, biru, kuning, orange, ungu, coklat, hitam, putih, dan abu-abu. Dengan metode OpenCV, objek berwarna merah, hijau, dan biru dapat dengan mudah dipisahkan. Selai itu, metode ini juga memiliki kekurangan diantaranya performa sistem cenderung dipengaruhi oleh kondisi pencahayaan yang rendah, dimana deteksi menjadi kurang akurat atau tidak optimal.
+
+3. Bagaimana cara meningkatkan akurasi sistem deteksi objek?
+Terdapat beberapa cara untuk meningkatkan akurasi sistem deteksi objek:
+a) Peningkatan dataset: Menambah kemampuan generalisasi sistem dengan cara menambahkan variasi gambar dalam dataset melalui teknik augmentasi.
+b) Deep Learning dengan CNN: Metode deep learning banyak dikembangkan berbasis Convolutional Neural Networks (CNN) yang memiliki kemampuan mempelajari fitur untuk deteksi dan klasifikasi.
+c) Penggunaan Autoencoder: Penggunaan autoencoder untuk mengekstraksi fitur dimensi tinggi dari data gambar multispektral dapat meningkatkan performa deteksi objek hingga 66,3% dalam hal mAP (mean average precision), yang jauh lebih tinggi dibandingkan dengan metode tradisional berbasis CNN atau YOLO.
